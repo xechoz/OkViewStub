@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@color/colorPrimary"
+    android:showDividers="middle"
+    tools:context=".MainActivity">
+
+    <!-- use layout -->
+    <xyz.icodes.widget.OkViewStub
+        android:id="@+id/stubA"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        app:layout="@layout/demo" />
+
+    <!--  use android build in view -->
+    <xyz.icodes.widget.OkViewStub
+        android:id="@+id/stubB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_class="SearchView" />
+
+    <!-- use custom view-->
+    <xyz.icodes.widget.OkViewStub
+        android:id="@+id/stubC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_class="com.example.myapplication.DemoView" />
+
+    <!--  inflate by code -->
+    <xyz.icodes.widget.OkViewStub
+        android:id="@+id/stubD"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
